@@ -117,7 +117,7 @@ def send_slack_alert(message: str, gpu_info: Optional[List[Dict]] = None):
                 gpu_text += f"\nError: {gpu['error']}"
             else:
                 gpu_text += (
-                    f"\n• ⚡ GPU: {gpu['gpu_util']}% | "
+                    f" >> ⚡ GPU: {gpu['gpu_util']}% | "
                     f"🧠 Mem: {gpu['mem_util']}% ({gpu['mem_used']}/{gpu['mem_total']} MiB) | "
                     f"🌡️ {gpu['temp']}°C"
                 )
